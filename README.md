@@ -110,3 +110,9 @@ python3 -m tgradish spoof input_long.webm sticker_spoof.webm
 **Благодарности:**
 - Проекту **[sliva0/tgradish](https://github.com/sliva0/tgradish)** (автор [sliva0](https://github.com/sliva0)) за метод подмены длительности WebM.
 - **[FFmpeg Project](https://ffmpeg.org/)** за мультимедийный инструментарий.
+
+---
+
+## English summary
+
+A tool and pipeline for converting Telegram round video messages ("video circles") and square videos into Telegram video stickers: WebM with VP9 and an alpha channel, 512x512, up to 3 seconds and 256 KB. It uses FFmpeg and a small Python (Pillow) script to apply a transparent circular mask so the sticker has no white or black corners, with an FFmpeg one-liner as an alternative. The repo ships an AI agent skill (SKILL.md): copy the repo into your agent's skills directory or give it SKILL.md together with the video you want to convert.
